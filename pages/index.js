@@ -338,7 +338,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial }) => {
       </section>
 
       {/* Testimonial */}
-      <section className="section pt-0">
+      { testimonial.enabled && <section className="section pt-0">
         <div className="container">
           <div className="animate text-center">
             <p>{testimonial.subtitle}</p>
@@ -421,7 +421,7 @@ const Home = ({ banner, brands, features, intro, speciality, testimonial }) => {
             </div>
           </div>
         </div>
-      </section>
+      </section> }
 
       {/* Cta */}
       <Cta />

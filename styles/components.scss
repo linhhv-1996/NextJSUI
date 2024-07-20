@@ -5,10 +5,14 @@
 
 // container
 .container {
-  @apply mx-auto max-w-[1380px] px-3;
+  // @apply mx-auto max-w-[1380px] px-3;
+  // &-xl {
+  //   @apply max-w-[1440px] mx-auto px-3;
+  // }
+  @apply mx-auto max-w-[1280px] px-3;
   
   &-xl {
-    @apply max-w-[1440px] mx-auto px-3;
+    @apply max-w-[1300px] mx-auto px-3;
   }
 }
 
@@ -84,7 +88,17 @@
 // form style
 .form-input,
 .form-textarea {
-  @apply border-primary  border border-transparent bg-theme-light rounded border-l-primary focus:border-primary focus:border focus:ring-transparent py-4;
+  border-radius: 0.25rem;
+    border-width: 1px;
+    border-color: rgb(254 96 25 / var(--tw-border-opacity));
+    border-color: #e0e0e0;
+    --tw-border-opacity: 1;
+    border-left-color: #e0e0e0;
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 250 243 / var(--tw-bg-opacity));
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  // @apply border-primary  border border-transparent bg-theme-light rounded border-l-primary focus:border-primary focus:border focus:ring-transparent py-4;
 }
 
 // content style
