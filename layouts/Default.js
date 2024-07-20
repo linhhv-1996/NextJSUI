@@ -6,7 +6,7 @@ const Default = ({ data }) => {
   const { frontmatter, mdxContent } = data;
   const { title } = frontmatter;
   return (
-    <section className="section">
+    <section className="section pt-0">
       <Banner title={title} />
       <div className="container mt-10">
         <div className="content">
